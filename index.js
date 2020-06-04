@@ -28,6 +28,7 @@ mongoose
 
 //Routes
 app.use("/api/category", require("./routes/category"));
+app.use("/api/videogame", require("./routes/videogame"));
 
 //Listen Port
 const port = process.env.PORT;
