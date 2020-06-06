@@ -48,6 +48,11 @@ exports.signin = (req, res) => {
   });
 };
 
+exports.signout = (req, res) => {
+  res.clearCookie("t");
+  res.json({ message: "You signed out" });
+};
+
 /* exports.isAdmin = (req, res, next) => {
   let user = req.profile && req.auth && req.profile._id == req.auth._id;
   if (!user) {
